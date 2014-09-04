@@ -1,0 +1,64 @@
+\documentclass{unswmaths}
+\usepackage{unswshortcuts}
+\begin{document}
+
+
+\subject{Complex Analysis}
+\author{Edward McDonald}
+\title{Assignment 1}
+\studentno{3375335}
+\setlength\parindent{0pt}
+\unswtitle{}
+
+
+\newcommand{\Real}{\operatorname{Re}}
+
+\section*{Question 1}
+For this question, define the function
+\begin{equation*}
+    \zeta(z) = \sum_{n=1}^\infty n^{-z}.
+\end{equation*}
+\begin{lemma}
+    $\zeta$ is defined and complex differentiable on the domain $\{z \in \Cplx\;:\;\Real(z) > 1\}$
+\end{lemma}
+
+Now define the function $\zeta_1(z) = $...
+\begin{lemma}
+    $\zeta_1(z) = \zeta(z)$ for all $\Real(z) > 1$.
+\end{lemma}
+\begin{theorem}
+    $\zeta_1$ is defined for $z \in \{z\;:\;\Real(z) > 0, z\neq 1\}$.
+\end{theorem}
+
+\section*{Question 2}
+For this question, $f_1,f_2:\Cplx\rightarrow\Cplx$ are complex differentiable
+with $f_2 \neq 0$.
+\begin{theorem}
+    The function $f = f_1/f_2$ cannot have infinitely many poles within the unit ball.
+\end{theorem}
+\begin{proof}
+    If $f$ is undefined precisely when $f_2 = 0$, so the poles
+    of $f$ within the unit ball must be zeros of $f_2$ within the unit ball.
+    Assume that $f$ has infinitely many poles in the unit ball.
+    
+    However, since $f_2 \neq 0$, the zeros of $f_2$ are a discrete set.
+    
+    By the Bolzano-Weierstrass theorem, any infinite set in the open unit ball
+    has a limit point in the closed unit ball. Hence if $f_2$
+    has infinitely many zeros inside the unit ball, the zeros of $f_2$
+    are not discrete and this is a contradiction.
+\end{proof}
+
+\section*{Question 3}
+\begin{theorem}
+    The function
+    \begin{equation*}
+        f(z) = \sqrt{a^2-1}\sin\left(\frac{\pi}{2K(k)}\int_0^{\frac{z}{\sqrt{k}}\right)\frac{1}{\sqrt{(1-t^2)(1-k^2t^2)}}dt\right)
+    \end{equation*}
+    maps the the unit ball conformally to the interior of an ellipse
+\end{theorem}
+
+\section*{Question 4}
+
+
+\end{document}
